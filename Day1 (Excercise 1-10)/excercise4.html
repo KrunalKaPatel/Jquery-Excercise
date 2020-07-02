@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3rd Excercise</title>
+</head>
+<body>
+<input type="checkbox" id="tick" name="">Hello<br>
+<button disabled="disabled">Click</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('#tick').click(function() {
+	if ($('button').is(':disabled')) {
+    	$('button').removeAttr('disabled');
+    } else {
+    	$('button').attr('disabled', 'disabled');
+    }
+});
+});
+</script>
+</html>
+

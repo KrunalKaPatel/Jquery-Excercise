@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2nd Excercise</title>
+  <style type="text/css">
+  	p{
+  		font-size: 25px;
+  	}
+  	p:first-child
+  	{
+  		font-size: 50px;
+  	}
+  </style>
+</head>
+<body>
+<p>Your are on Top of screen</p>
+<p>Jquery Excercise</p>
+<p>Jquery Excercise</p>
+<p>Jquery Excercise</p>
+<p>Jquery Excercise</p>
+<p>Jquery Excercise</p>
+<p>Jquery Excercise</p>
+<p>Jquery Excercise</p>
+<p>Jquery Excercise</p>
+<p>Jquery Excercise</p>
+<p>Jquery Excercise</p>
+<p>Jquery Excercise</p>
+<p>Jquery Excercise</p>
+<p>Jquery Excercise</p>
+<p>Jquery Excercise</p>
+<p>Jquery Excercise</p>
+<p>Jquery Excercise</p>
+<p>Jquery Excercise</p>
+<p>Jquery Excercise</p>
+<h1>Click to go to the top.</h1>
+<a href="#top">Click Me</a>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#top").click(function(){
+	$("body").animate({ scrollTop: 0 });
+  });
+});
+</script>
+</html>
+
+
