@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		p
+		{
+			background-color: grey;
+			font-size: 20px;
+			color: #000;
+			width: 10%;
+			border: 5px solid black;
+		}
+	</style>
+</head>
+<body>
+	<p>Hello World!!</p>
+	<button id="btn1">Remove CSS</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+   		$("p").css({"background-color":"#fff","border":"0"});
+	});
+});
+</script>
+</html>

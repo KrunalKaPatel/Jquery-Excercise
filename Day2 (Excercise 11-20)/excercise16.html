@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet viverra eros, nec facilisis lorem vehicula vitae. Nullam in auctor neque, non pharetra urna. Cras aliquet suscipit odio eu ullamcorper. Integer efficitur elit lorem, quis dictum felis scelerisque a. Proin pulvinar vestibulum metus. Sed sem lorem, dignissim commodo consectetur sit amet, imperdiet sit amet elit. Nulla nec facilisis sem. Duis ipsum dui, euismod id velit sit amet, ornare volutpat ipsum. Proin sit amet nunc ante. Duis elementum lobortis mi, et vulputate nibh efficitur vitae. Fusce volutpat molestie eros, nec aliquam eros condimentum quis.</p>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+	let ptext = $("p").text();
+	$("p").append("<span>"+ptext+"</span>").css("text-decoration","underline");
+});
+</script>
+</html>

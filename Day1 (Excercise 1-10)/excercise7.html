@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+  	body
+  	{
+  		display: flex;
+  		justify-content: center;
+  	}
+  	table 
+  	{
+    	border-collapse: collapse;
+	}
+  	td{
+  		padding: 10px 40px;
+  		border: 1px solid #000;
+  	}
+  </style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>Hello01</td>
+			<td>Hello02</td>
+			<td>Hello03</td>
+		</tr>
+
+		<tr>
+			<td>Hello04</td>
+			<td>Hello05</td>
+			<td>Hello06</td>
+		</tr>
+
+		<tr>
+			<td>Hello07</td>
+			<td>Hello08</td>
+			<td>Hello09</td>
+		</tr>
+
+		<tr>
+			<td>Hello10</td>
+			<td>Hello11</td>
+			<td>Hello12</td>
+		</tr>
+
+	</table>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("tr:nth-of-type(even)").css({"background-color": "black", "color": "#fff"});
+	});
+</script>
+</html>

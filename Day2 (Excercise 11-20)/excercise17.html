@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" name="" value="Hello This is value"><br><br>
+	<button>Click to see value</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+	let inputvalue = $("input").val();
+	$("button").click(function(){
+		alert(inputvalue);	
+	});
+});
+</script>
+</html>

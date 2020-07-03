@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<select>
+		<option value="Hello">Hello</option>
+		<option value="There">There</option>
+		<option value="How">How</option>
+		<option value="Are">Are</option>
+		<option value="You">You</option>
+	</select>
+	<input id="btn1" type="button" value="Remove Options">
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+   		$("select").empty();
+   		$("select").append("<option>Hello World!!</option>");
+	});
+});
+</script>
+</html>

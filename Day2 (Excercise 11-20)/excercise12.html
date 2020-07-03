@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.first-div
+		{
+			height: 300px;
+			width: 500px;
+			background-color: grey;
+			color: #fff;
+		}
+		.second-div
+		{
+			height: 300px;
+			width: 500px;
+			background-color: #000;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="first-div">
+		<p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+	</div>
+	<div class="second-div"></div><br>
+	<button id="btn1">Button 1</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+   		$("p").appendTo(".second-div");
+	});
+});
+</script>
+</html>

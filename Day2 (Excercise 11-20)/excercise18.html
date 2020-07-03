@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.divclass
+		{
+			background-color: grey;
+			padding: 20px;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="divclass">Hello World!</div><br><br>
+	<button>Click to remove CSS</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$(".divclass").removeClass();	
+	});
+});
+</script>
+</html>
