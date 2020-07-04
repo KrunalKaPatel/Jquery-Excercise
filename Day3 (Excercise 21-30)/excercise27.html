@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<div class="hello" style="background-color: black;width: 100px;height: 100px;"></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+  let x = $(".hello");
+  alert(typeof(x));
+  alert(x[0].outerHTML);
+});
+</script>
+</html>

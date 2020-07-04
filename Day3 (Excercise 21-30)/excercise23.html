@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+  	
+  </style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>Hello 01</td>
+			<td>Hello 02</td>
+			<td>Hello 03</td>
+		</tr>
+
+		<tr>
+			<td>Hello 04</td>
+			<td>Hello 05</td>
+			<td>Hello 06</td>
+		</tr>
+	</table>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+    let row = $("tr").length;
+   	let x = $("td").length;
+   	let col = x/2;
+    alert("No. of rows: "+row+" and No. of columns: "+col);
+});
+</script>
+</html>

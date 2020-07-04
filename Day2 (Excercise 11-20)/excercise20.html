@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+  	h2:first-child
+  	{
+  		color: yellow;
+  	}
+  	h2:nth-child(2)
+  	{
+  		color: green;
+  	}
+  </style>
+</head>
+<body>
+	<div>
+		<h2>This Is Right Click.</h2>
+		<h2>This Is Left Click.</h2>
+	</div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("body").css("background-color","yellow");
+});
+$(document).on("contextmenu",function(){
+    $("body").css("background-color","green");
+    return false;
+}); 
+$(document).click(function(){
+    $("body").css("background-color","yellow");
+});
+</script>
+</html>
