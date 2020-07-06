@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+  	.green
+  	{
+  		background-color: green;
+  	}
+  	.red{
+  		background-color: red;
+  	}
+  </style>
+</head>
+<body>
+	<p class="green">Hello World!!</p>
+	<button>Click to change class</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    	$("p").removeClass("green").addClass("red");
+    });
+});
+</script>
+</html>

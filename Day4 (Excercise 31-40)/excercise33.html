@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		table
+		{
+			border-collapse: collapse
+		}
+		table,td 
+		{
+  			border: 1px solid black;
+		}
+		td
+		{
+			padding: 10px 50px;
+		}
+	</style>
+</head>
+<body>
+<table>
+	<tr>
+		<td>Hello 01</td>
+		<td>Hello 02</td>
+		<td>Hello 03</td>
+	</tr>
+
+	<tr>
+		<td>Hello 04</td>
+		<td>Hello 05</td>
+		<td>Hello 06</td>
+	</tr>
+
+	<tr>
+		<td>Hello 07</td>
+		<td>Hello 08</td>
+		<td>Hello 09</td>
+	</tr>
+
+</table>
+<br>
+
+<button>Remove div element</button>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("tr").eq(2).remove();
+  });
+});
+</script>
+</html>

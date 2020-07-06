@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+  	
+  </style>
+</head>
+<body>
+	<div>
+		<p>Hello 01</p>
+		<p>Hello 02</p>
+		<p>Hello 03</p>
+		<p>Hello 04</p>
+		<p>Hello 05</p>
+	</div>
+	<button>Click to count p</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    	let x = $("div p").length;
+    	$("body").append("<p>No. of p's are: "+x+"</p>");
+    });
+});
+</script>
+</html>

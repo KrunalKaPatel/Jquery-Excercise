@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+  	
+  </style>
+</head>
+<body>
+	<h3>List Options:</h3>
+	<select>
+		<option>Hello</option>
+		<option>World</option>
+	</select>
+	<button>Click to add new option</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+    	$("select").append("<option>Hello World!</option");
+    });
+});
+</script>
+</html>
