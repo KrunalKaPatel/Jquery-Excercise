@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+	<label>Enter:</label>
+	<input type="text" name="">
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("input").keyup(function(){
+	    let x = this.value;
+		x = x.split("");
+		let y = $.isNumeric(x[x.length - 1]);
+		if(!y)
+		{
+			x.pop();
+			this.value = x.join("");
+		}
+	});
+});
+</script>
+</html>

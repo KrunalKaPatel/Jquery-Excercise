@@ -46,7 +46,8 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("tr").eq(2).remove();
+    $("tr").eq(0).addClass("first");
+    $("tr").not(".first").remove();
   });
 });
 </script>

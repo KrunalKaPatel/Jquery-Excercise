@@ -11,7 +11,7 @@
 	<select>
 		<option>Hello</option>
 		<option>World</option>
-		<option>Hello 01</option>
+		<option selected>Hello 01</option>
 		<option>World 02</option>
 	</select>
 	<button>Click to add new option</button><br>
@@ -20,7 +20,7 @@
 <script>
 $(document).ready(function(){
     $("button").click(function(){
-    	let x = $("option").val();
+    	let x = $("option:selected").text();
     	$("body").append(x);
     });
 });
