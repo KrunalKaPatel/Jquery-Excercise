@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+  	p
+  	{
+  		font-size: 50px;
+  	}
+	</style>
+</head>
+<body>
+	<p>Hello <span></span></p>
+	<button>Click to add value to span</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$("span").text("World!!");
+    });
+});
+</script>
+</html>

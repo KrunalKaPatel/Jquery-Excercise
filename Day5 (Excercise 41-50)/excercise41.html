@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+  	table
+    {
+      border-collapse: collapse
+    }
+    table,td 
+    {
+        border: 1px solid black;
+    }
+    td
+    {
+      padding: 10px 50px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>1st row</td>
+      <td>1st row</td>
+      <td>1st row</td>
+    </tr>
+
+    <tr>
+      <td>2nd row</td>
+      <td>2nd row</td>
+      <td>2nd row</td>
+    </tr>
+
+    <tr>
+      <td>3rd row</td>
+      <td>3rd row</td>
+      <td>3rd row</td>
+    </tr>
+
+  </table>
+  <br>
+	<button>Click to remove 3rd row</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+    	$("tr").eq(2).remove();
+    });
+});
+</script>
+</html>
