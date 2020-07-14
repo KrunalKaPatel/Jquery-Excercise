@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+  		
+	</style>
+</head>
+<body>
+	<input type="text" name="" placeholder="Name" disabled> 
+	<input type="password" name="" placeholder="password" disabled>
+	<br><br>
+	<button>Click to remove attribute form input</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$("input").prop("disabled", false).css("background-color","lightgreen");
+	});
+});
+</script>
+</html>

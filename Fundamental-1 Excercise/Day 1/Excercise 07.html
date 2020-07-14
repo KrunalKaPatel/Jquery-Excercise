@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.w3r_background{
+			background-color: lightgreen;
+		}
+		.w3r_font_color{
+				color: red;
+		}
+		p{
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<p class="w3r_font_color">This is an Para.</p>
+	<button>Add class to last p tag</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+   		$("p").addClass("w3r_background");
+	});
+});
+</script>
+</html>

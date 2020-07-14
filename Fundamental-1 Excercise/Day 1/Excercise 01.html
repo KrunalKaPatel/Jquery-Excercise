@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<textarea>Hello World!!</textarea>
+	<textarea>Hello World!!</textarea>
+	<p>Hiii There.</p>
+	<p>Hiii There.</p>
+	<button>Add border to all textarea and p tags</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+   		$("textarea, p").css("border","2px solid red");
+	});
+});
+</script>
+</html>
